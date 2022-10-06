@@ -71,6 +71,7 @@ def loadLib(name,path):
 # semisuperPreprosess =loadLib("semisuperPreprosess", "/mnt/disks/sdb/piCaiCode/preprocessing/semisuperPreprosess.py")
 
 import preprocessing.ManageMetadata as manageMetaData
+import preprocessing.semisuperPreprosess as semisuperPreprosess
 import model.unets as unets
 import model.DataModule as DataModule
 import model.LigtningModel as LigtningModel
