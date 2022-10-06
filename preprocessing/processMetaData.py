@@ -8,7 +8,7 @@ import pandas as pd
 import SimpleITK as sitk
 
 #read metadata, and add columns for additional information
-csvPath='/home/sliceruser/labels/clinical_information/marksheet.csv'
+csvPath='/mnt/disks/sdb/labels/clinical_information/marksheet.csv'
 df = pd.read_csv(csvPath)
 #initializing empty columns
 df["reSampledPath"] = ""
@@ -44,11 +44,11 @@ def unpackk(zipDir,targetDir):
     #    # Extract all the contents of zip file in different directory
     #    zipObj.extractall(targetDir)
         
-# unpackk( '/home/sliceruser/picai_public_images_fold0.zip', targetDir)      
-# unpackk( '/home/sliceruser/picai_public_images_fold1.zip', targetDir)      
-# unpackk( '/home/sliceruser/picai_public_images_fold2.zip', targetDir)      
-# unpackk( '/home/sliceruser/picai_public_images_fold3.zip', targetDir)      
-# unpackk( '/home/sliceruser/picai_public_images_fold4.zip', targetDir) 
+# unpackk( '/mnt/disks/sdb/picai_public_images_fold0.zip', targetDir)      
+# unpackk( '/mnt/disks/sdb/picai_public_images_fold1.zip', targetDir)      
+# unpackk( '/mnt/disks/sdb/picai_public_images_fold2.zip', targetDir)      
+# unpackk( '/mnt/disks/sdb/picai_public_images_fold3.zip', targetDir)      
+# unpackk( '/mnt/disks/sdb/picai_public_images_fold4.zip', targetDir) 
 
 unpackk( '/mnt/disks/sdb/origB/picai_public_images_fold0.zip', targetDir)      
 unpackk( '/mnt/disks/sdb/origB/picai_public_images_fold1.zip', targetDir)      
@@ -75,7 +75,7 @@ for subdir, dirs, files in os.walk(targetDir):
 print(dirDict)
 
 labelsFiles=[]
-labelsRootDir = '/home/sliceruser/labels/csPCa_lesion_delineations/human_expert/resampled/'
+labelsRootDir = '/mnt/disks/sdb/labels/csPCa_lesion_delineations/human_expert/resampled/'
 for subdir, dirs, files in os.walk(labelsRootDir):
     labelsFiles=files
     

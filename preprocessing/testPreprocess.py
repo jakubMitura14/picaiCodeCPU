@@ -28,7 +28,7 @@ experiment = Experiment(
 )
 
 ## some paths
-elacticPath='/home/sliceruser/elastixBase/elastix-5.0.1-linux/bin/elastix'
+elacticPath='/mnt/disks/sdb/elastixBase/elastix-5.0.1-linux/bin/elastix'
 reg_prop='/mnt/disks/sdb/piCaiCode/preprocessing/registration/parameters.txt'  
 trainedModelsBasicPath='/mnt/disks/sdb/preprocess/standarizationModels'
 

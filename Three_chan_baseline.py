@@ -112,7 +112,7 @@ def mainTrain(trial,df,experiment_name,dummyDict,num_workers,cpu_num ,default_ro
     df=df.loc[df[chan3_col_name] != ' ']
     label_name=f"label{spacing_keyword}{sizeWord}" 
     label_name_val=label_name
-    cacheDir =  f"/home/sliceruser/preprocess/monai_persistent_Dataset/{spacing_keyword}/{sizeWord}"
+    cacheDir =  f"/mnt/disks/sdb/preprocess/monai_persistent_Dataset/{spacing_keyword}/{sizeWord}"
     csvPath = "/mnt/disks/sdb/csvResD.csv"
 
     # imageRef_path=list(filter(lambda it: it!= '', df[label_name].to_numpy()))[0]
@@ -144,7 +144,7 @@ def mainTrain(trial,df,experiment_name,dummyDict,num_workers,cpu_num ,default_ro
     hbvColName="hbv"+spacing_keyword
 
     
-    df=df.str.replace('/home/sliceruser/data','/mnt/disks/sdb',  regex=True)
+    df=df.str.replace('/mnt/disks/sdb/data','/mnt/disks/sdb',  regex=True)
     df=df.loc[df[t2wColName] != ' ']
     label_name="label"+spacing_keyword
     label_name_val=label_name
