@@ -71,6 +71,7 @@ import model.unets as unets
 import model.DataModule as DataModule
 import model.LigtningModel as LigtningModel
 import Three_chan_baseline
+import preprocessing.semisuperPreprosess as semisuperPreprosess
 
 # manageMetaData =loadLib("ManageMetadata", "/mnt/disks/sdb/piCaiCode/preprocessing/ManageMetadata.py")
 # dataUtils =loadLib("dataUtils", "/mnt/disks/sdb/piCaiCode/dataManag/utils/dataUtils.py")
