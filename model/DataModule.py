@@ -29,10 +29,6 @@ from monai.config import print_config
 from monai.apps import download_and_extract
 
 from torch.utils.data import DataLoader, BatchSampler, RandomSampler
-import random
-sns.set()
-plt.rcParams['figure.figsize'] = 12, 8
-monai.utils.set_determinism()
 
 from datetime import datetime
 import os
@@ -58,27 +54,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 
-# spec = importlib.util.spec_from_file_location("transformsForMain", "/mnt/disks/sdb/piCaiCode/preprocessing/transformsForMain.py")
-# transformsForMain = importlib.util.module_from_spec(spec)
-# sys.modules["transformsForMain"] = transformsForMain
-# spec.loader.exec_module(transformsForMain)
-
-# spec = importlib.util.spec_from_file_location("ManageMetadata", "/mnt/disks/sdb/piCaiCode/preprocessing/ManageMetadata.py")
-# manageMetaData = importlib.util.module_from_spec(spec)
-# sys.modules["ManageMetadata"] = manageMetaData
-# spec.loader.exec_module(manageMetaData)
-
 from model import transformsForMain as transformsForMain
-
-# spec = importlib.util.spec_from_file_location("dataUtils", "/mnt/disks/sdb/piCaiCode/dataManag/utils/dataUtils.py")
-# dataUtils = importlib.util.module_from_spec(spec)
-# sys.modules["dataUtils"] = dataUtils
-# spec.loader.exec_module(dataUtils)
-
-# import preprocessing.transformsForMain as transformsForMain
-# import preprocessing.ManageMetadata as manageMetaData
-# import dataManag.utils.dataUtils as dataUtils
-# import multiprocessing
 
 
 
