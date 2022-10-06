@@ -144,7 +144,7 @@ def mainTrain(trial,df,experiment_name,dummyDict,num_workers,cpu_num ,default_ro
     hbvColName="hbv"+spacing_keyword
 
     
-
+    df=df.str.replace('/home/sliceruser/data','/mnt/disks/sdb',  regex=True)
     df=df.loc[df[t2wColName] != ' ']
     label_name="label"+spacing_keyword
     label_name_val=label_name
