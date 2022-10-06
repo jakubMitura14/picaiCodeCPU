@@ -209,11 +209,12 @@ spacings =  ["_one_spac_c" ,"_med_spac_b" ]# ,"_med_spac_b" #config['parameters'
 
 def getDummy(spac):
     label_name=f"label{spac}_maxSize_" 
-    imageRef_path=list(filter(lambda it: it!= '', df[label_name].to_numpy()))[0]
+    imageRef_path=list(filter(lambda it: it!= '', df[label_name].to_numpy()))[0].replace('/home/sliceruser/data','/mnt/disks/sdb')
     dummyLabelPath=f"/mnt/disks/sdb/dummyData/zeroLabel{spac}.nii.gz"
     sizz=semisuperPreprosess.writeDummyLabels(dummyLabelPath,imageRef_path)
     img_size = sizz#(sizz[2],sizz[1],sizz[0])
     return(dummyLabelPath,img_size)
+
 
 
 aa=list(map(getDummy  ,spacings  ))
