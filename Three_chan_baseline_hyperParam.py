@@ -66,14 +66,20 @@ def loadLib(name,path):
     spec.loader.exec_module(res)
     return res
 
-manageMetaData =loadLib("ManageMetadata", "/mnt/disks/sdb/piCaiCode/preprocessing/ManageMetadata.py")
+import preprocessing.ManageMetadata as manageMetaData
+import model.unets as unets
+import model.DataModule as DataModule
+import model.LigtningModel as LigtningModel
+import Three_chan_baseline
+
+# manageMetaData =loadLib("ManageMetadata", "/mnt/disks/sdb/piCaiCode/preprocessing/ManageMetadata.py")
 # dataUtils =loadLib("dataUtils", "/mnt/disks/sdb/piCaiCode/dataManag/utils/dataUtils.py")
-unets =loadLib("unets", "/mnt/disks/sdb/piCaiCode/model/unets.py")
-DataModule =loadLib("DataModule", "/mnt/disks/sdb/piCaiCode/model/DataModule.py")
-LigtningModel =loadLib("LigtningModel", "/mnt/disks/sdb/piCaiCode/model/LigtningModel.py")
-Three_chan_baseline =loadLib("Three_chan_baseline", "/mnt/disks/sdb/piCaiCode/Three_chan_baseline.py")
-detectSemiSupervised =loadLib("detectSemiSupervised", "/mnt/disks/sdb/piCaiCode/model/detectSemiSupervised.py")
-semisuperPreprosess =loadLib("semisuperPreprosess", "/mnt/disks/sdb/piCaiCode/preprocessing/semisuperPreprosess.py")
+# unets =loadLib("unets", "/mnt/disks/sdb/piCaiCode/model/unets.py")
+# DataModule =loadLib("DataModule", "/mnt/disks/sdb/piCaiCode/model/DataModule.py")
+# LigtningModel =loadLib("LigtningModel", "/mnt/disks/sdb/piCaiCode/model/LigtningModel.py")
+# Three_chan_baseline =loadLib("Three_chan_baseline", "/mnt/disks/sdb/piCaiCode/Three_chan_baseline.py")
+# detectSemiSupervised =loadLib("detectSemiSupervised", "/mnt/disks/sdb/piCaiCode/model/detectSemiSupervised.py")
+# semisuperPreprosess =loadLib("semisuperPreprosess", "/mnt/disks/sdb/piCaiCode/preprocessing/semisuperPreprosess.py")
 
 # ray.init(runtime_env={"env_vars": {"PL_DISABLE_FORK": "1"}})
 ##options
