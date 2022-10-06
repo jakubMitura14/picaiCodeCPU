@@ -65,10 +65,15 @@ def loadLib(name,path):
 # manageMetaData =loadLib("ManageMetadata", "/mnt/disks/sdb/piCaiCode/preprocessing/ManageMetadata.py")
 # dataUtils =loadLib("dataUtils", "/mnt/disks/sdb/piCaiCode/dataManag/utils/dataUtils.py")
 
-unets =loadLib("unets", "/mnt/disks/sdb/piCaiCode/model/unets.py")
-DataModule =loadLib("DataModule", "/mnt/disks/sdb/piCaiCode/model/DataModule.py")
-LigtningModel =loadLib("LigtningModel", "/mnt/disks/sdb/piCaiCode/model/LigtningModel.py")
-semisuperPreprosess =loadLib("semisuperPreprosess", "/mnt/disks/sdb/piCaiCode/preprocessing/semisuperPreprosess.py")
+# unets =loadLib("unets", "/mnt/disks/sdb/piCaiCode/model/unets.py")
+# DataModule =loadLib("DataModule", "/mnt/disks/sdb/piCaiCode/model/DataModule.py")
+# LigtningModel =loadLib("LigtningModel", "/mnt/disks/sdb/piCaiCode/model/LigtningModel.py")
+# semisuperPreprosess =loadLib("semisuperPreprosess", "/mnt/disks/sdb/piCaiCode/preprocessing/semisuperPreprosess.py")
+
+import preprocessing.ManageMetadata as manageMetaData
+import model.unets as unets
+import model.DataModule as DataModule
+import model.LigtningModel as LigtningModel
 
 
 
