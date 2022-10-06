@@ -252,6 +252,7 @@ study = optuna.create_study(
         #,storage="mysql://root@127.0.0.1:3306/picai_hp_35"
         )
         #mysql://root@localhost/example
+        
 study.optimize(objective, n_trials=40)
 
 
