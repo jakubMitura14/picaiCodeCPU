@@ -21,7 +21,10 @@ study = optuna.create_study(
         study_name=experiment_name
         ,sampler=optuna.samplers.NSGAIISampler()    
         ,pruner=optuna.pruners.HyperbandPruner()
-        ,storage="mysql://root@34.147.7.30:3306/picai_hp_35"
+        ,storage="mysql://jmb@34.147.7.30:3306/picai_hp_35"
         ,load_if_exists=True
         #,storage="mysql://root@127.0.0.1:3306/picai_hp_35"
         )
+
+print(study)
+#        python3 testConnection.py
