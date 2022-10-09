@@ -248,7 +248,7 @@ study = optuna.create_study(
         ,sampler=optuna.samplers.NSGAIISampler()    
         ,pruner=optuna.pruners.HyperbandPruner()
         # ,storage="mysql://root@34.147.7.30/picai_hp_36"
-        ,storage="mysql://jm@34.147.7.30/picai_hp_36"
+        ,storage="mysql://root:jm@34.78.131.144:3306/picai_hp_35"
         ,load_if_exists=True
         #,storage="mysql://root@127.0.0.1:3306/picai_hp_35"
         )
