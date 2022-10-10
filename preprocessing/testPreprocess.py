@@ -467,7 +467,7 @@ preprocess_diffrent_spacings(df,(1.0,1.0,1.0),"_one_spac_c")
 
 
 
-print("fiiiniiished")
+print("fiiiniiisheddd")
 df.to_csv('/mnt/disks/sdb/metadata/processedMetaData_current_b.csv') 
 print(df['num_lesions_to_retain'])
 
