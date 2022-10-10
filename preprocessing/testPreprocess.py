@@ -430,7 +430,6 @@ def preprocess_diffrent_spacings(df,targetSpacingg,spacing_keyword):
 # some preprocessing common for all
 
 
-
 # bias field correction
 # Standardize.iterateAndBiasCorrect('t2w',df)
 #Standarization
